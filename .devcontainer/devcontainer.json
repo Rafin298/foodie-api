@@ -1,0 +1,8 @@
+{
+    // Path to Docker Compose file(s)
+    "dockerComposeFile": "../docker-compose.yml",
+    // Which service inside dockerComposeFile to attach to 
+    "service": "app",
+    // Attach directory within the service container
+    "workspaceFolder": "/app"
+  }
