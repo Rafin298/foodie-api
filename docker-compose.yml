@@ -1,4 +1,4 @@
-name: foodie-project
+version: "3.9"
 
 services:
   app:
@@ -20,8 +20,7 @@ services:
       - DB_USER=devuser
       - DB_PASS=1234
     depends_on:
-      db:
-        condition: service_started
+      - db
   db:
     image: postgres:17.4-alpine
     volumes:
