@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 
-# Create your models here.
+
 class Recipe(models.Model):
     """Recipe object"""
     user = models.ForeignKey(
