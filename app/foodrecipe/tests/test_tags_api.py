@@ -10,7 +10,7 @@ from foodrecipe.models import Tag, Recipe
 from foodrecipe.serializers import TagSerializer
 
 
-TAGS_URL = reverse('recipe:tag-list')
+TAGS_URL = reverse('foodrecipe:tag-list')
 
 
 class PublicTagsApiTests(TestCase):

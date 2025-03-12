@@ -1,26 +1,26 @@
 from rest_framework import serializers
 
-from foodrecipe.models import Recipe, Tag
+from foodrecipe.models import Recipe, Tag, Ingredient
 
 # from core.models import Tag, Ingredient, Recipe
 
 
-# class TagSerializer(serializers.ModelSerializer):
-#     """Serializer for tag objects"""
+class TagSerializer(serializers.ModelSerializer):
+    """Serializer for tag objects"""
 
-#     class Meta:
-#         model = Tag
-#         fields = ('id', 'name')
-#         read_only_fields = ('id',)
+    class Meta:
+        model = Tag
+        fields = ('id', 'name')
+        read_only_fields = ('id',)
 
 
-# class IngredientSerializer(serializers.ModelSerializer):
-#     """Serializer for ingredient objects"""
+class IngredientSerializer(serializers.ModelSerializer):
+    """Serializer for ingredient objects"""
 
-#     class Meta:
-#         model = Ingredient
-#         fields = ('id', 'name')
-#         read_only_fields = ('id',)
+    class Meta:
+        model = Ingredient
+        fields = ('id', 'name')
+        read_only_fields = ('id',)
 
 
 class RecipeSerializer(serializers.ModelSerializer):
@@ -72,10 +72,10 @@ class RecipeImageSerializer(serializers.ModelSerializer):
         fields = ('id', 'image')
         read_only_fields = ('id',)
 
-class TagSerializer(serializers.ModelSerializer):
-    """Serializer for tag objects"""
+# class TagSerializer(serializers.ModelSerializer):
+#     """Serializer for tag objects"""
 
-    class Meta:
-        model = Tag
-        fields = ('id', 'name')
-        read_only_fields = ('id',)
+#     class Meta:
+#         model = Tag
+#         fields = ('id', 'name')
+#         read_only_fields = ('id',)
