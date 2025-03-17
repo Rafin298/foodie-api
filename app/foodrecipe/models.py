@@ -3,12 +3,14 @@ from django.conf import settings
 import uuid
 import os
 
+
 def recipe_image_file_path(instance, filename):
     """Generate file path for new recipe image"""
     ext = filename.split('.')[-1]
     filename = f'{uuid.uuid4()}.{ext}'
 
     return os.path.join('uploads/recipe/', filename)
+
 
 class Recipe(models.Model):
     """Recipe object"""
@@ -26,6 +28,7 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class Tag(models.Model):
     """Tag to be used for a recipe"""
