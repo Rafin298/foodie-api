@@ -126,8 +126,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/static'
-MEDIA_URL = 'static/media'
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 MEDIA_ROOT = 'vol/web/media'
 STATIC_ROOT = 'vol/web/static'
@@ -143,9 +143,5 @@ REST_FRAMEWORK = {
 }
 
 # SPECTACULAR_SETTINGS = {
-#     'TITLE': 'Your API',
-#     'DESCRIPTION': 'Your API description',
-#     'VERSION': '1.0.0',
-#     'SERVE_INCLUDE_SCHEMA': False,
-#     # OTHER SETTINGS
+#     'COMPONENT_SPLIT_REQUEST': True,
 # }
