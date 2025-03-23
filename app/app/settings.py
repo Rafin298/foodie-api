@@ -28,7 +28,7 @@ DEBUG = bool(int(os.environ.get('DEBUG', 0)))
 
 # ALLOWED_HOSTS = []
 # ALLOWED_HOSTS.extend(filter(None, os.environ.get('ALLOWED_HOSTS', '').split(',')))
-ALLOWED_HOSTS = ['localhost', 'ec2-3-26-178-91.ap-southeast-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['localhost', 'ec2-13-211-197-180.ap-southeast-2.compute.amazonaws.com']
 
 
 # Application definition
